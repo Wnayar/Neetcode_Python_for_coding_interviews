@@ -19,11 +19,11 @@ function rotate_cw(time) {
     left_wheel_move(time);
     ev3_pause(time);
 }
+
 function rotate_acw(time) {
     right_wheel_move(time);
     ev3_pause(time);
 }
-
 
 function long_forward_no_pause(time, speed) {
     ev3_runForTime(motorA, time, speed);
