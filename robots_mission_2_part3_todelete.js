@@ -68,9 +68,7 @@ while (distance_away <= 40){
         // when sensor doesnt see object worse case wings can still have contact
         // so move foward slightly before doign final turn
         original_turn();
-        ev3_runForTime(motorA, 3000, 750);
-        ev3_runForTime(motorB, 3000, 750);
-        ev3_pause(3000);
+        forward(3000, 750);
         inverse_of_original_turn();
         break;
     }
